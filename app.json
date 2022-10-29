@@ -1,0 +1,34 @@
+{
+    "name": "Custom Emoji Bot",
+    "logo": "https://telegra.ph/file/aa8d9c7254d827843bc29.jpg",
+    "description": "Download Custom Emoji",
+    "keywords": [
+        "emoji",
+        "download",
+        "telegram",
+        "bot"
+    ],
+    "repository": "https://github.com/Sallat-M/dlemoji",
+    "env": {
+        "API_ID": {
+            "description": "Get it from  https://my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get it from  https://my.telegram.org"
+        },
+        "BOT_TOKEN": {
+            "description": "Get it from @BotFather"
+        },
+        "Session_String": {
+            "description": "[Optional] Pyrogram Session String, use session_generator.py to generate it, If you don't add it the bot will create a new session every Restarting.",
+            "required": false
+        }
+    },
+    "stack": "heroku-20",
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
